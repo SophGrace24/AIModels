@@ -1,1 +1,5 @@
 .vscode/settings.json
+.vscode/ResearchProposalGuide.txt
+# Ignore all files in the .vscode directory.
+.vscode/
+
