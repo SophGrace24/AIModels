@@ -1,0 +1,48 @@
+LOG 1: UPDATED FRAMEWORK
+-------------------------
+This file will show personal logs and considerations/updates for the project. Considering the complicated nature of this project, in the name of science, nothing will be left undocumented.
+
+It stands to reason that perhaps graphs by themselves will not be the best demonstrations to use for modelling the potential outputs.
+I believe a grid that represents vectors, where number position and the values themselves will mean more.
+
+
+Consider:
+                                 v          v      v       v      v
+                    ==================================================
+                    |      | Feature 1| Feat 2  | Feat 3 | Feat 4| Y  |
+                    ==================================================
+                  > Feat 1 |          |         |        |       |    |
+                  > Feat 2 |          |         |        |       |    |
+                  > Feat 3 |          |         |        |       |    |
+                  > Feat 4 |          |         |        |       |    |
+                    ===================================================
+
+Feat rows/columns may be more accurately valued at different considerations.
+Perhaps rows are sentimental values or logical values and vise-versa. The problem then becomes...what are those features? Each problem, especially in ethics, can easily take on millions of considerations that are impossible to define.
+
+The solutions the models are meant to address are meant to be abstract solutions that humans naturally come to weigh logic and emotion within themselves.
+
+....How do you define what has never been defined, but exists within people as a natural part of our existence?
+How do you quantify something that humans struggle to label? The best we've come up with is: Moral deficit, when something isn't inherently wrong but shows something is wrong within a person.
+How do you prevent AI from demonstrating moral deficits?
+
+To take a simple average across the board will just be equivalent to mixing mud where it's equal parts water and dirt.
+
+It is reasonable, to me, to expect logic to provide the first path. The foundation, of which emotion builds upon. Logic answers, "How do we get there?" and Emotion edits, "How do we get there, ethically? Considerably? Positively??"
+
+For each dimensional score, perhaps the balanced profile should look more like:
+
+balanced = (weight_logic * logic_score) + (weight_emotion * emotion_score)
+
+Where weight_logic + weight_emotion = 1.0
+And more specifically, weight_logic > weight_emotion
+
+So for any given dimension, perhaps the framework should look:
+
+balanced = (0.7 * logic_score) + (0.3 * emotion_score)
+
+Though these numbers are set now, it may become more intuitively calculated in later versions.
+
+For now, the goal is to code a functional prototype of what I hope to accomplish. Thank you for reading.
+
+6/1/2025 --- LOG 1: REVISION OF INITIAL CONCEPT ---- SophGrace24 ---END.
