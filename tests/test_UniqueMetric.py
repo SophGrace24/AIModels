@@ -4,7 +4,7 @@ from Unique.Unique_Metric_Base import generateBalancedProfile
 
 class TestGenerateBalancedProfile(unittest.TestCase):
     def test_basicCalculations(self):
-        dimensionns = ['clarity', 'empathy','novelty']
+        dimensions = ['clarity', 'empathy','novelty']
 
         profileA = {
         'clarity': 0.7,
@@ -25,8 +25,18 @@ class TestGenerateBalancedProfile(unittest.TestCase):
     # minScore and maxScore will use defaults 0.0 and 1.0 for this test
     # expect no clipping with these input scores
 
-    expected_BalancedProfile = (
-        'clarity': (0.6 * 0.7) + (0.4 * 0.4) = 0.580
-        'empathy': (0.6 * 0.04) + (0.4 * 0.8) = 0.344
-        'novelty': {0.6 * 0.4} + (0.4 * 0.5) = 0.440
-    )
+    expected_BalancedProfile = {
+        'clarity': 0.580,
+        'empathy': 0.344,
+        'novelty': 0.440
+    }
+
+actualResult = generateBalancedProfile(
+    profileA=profileA,
+    profileB=profileB,
+    dimensions = dimensions,
+    weightA=WeightA,
+    weightB= WeightB
+)
+
+self.assertEqual(actualResult['balancedProfile'], expected_BalancedProfile)
